@@ -7,11 +7,11 @@ describe('Scenario mobile automation', () => {
       await inputName.clearValue();
       
       // Input teks baru ke dalam field
-      await inputName.setValue('Cahyo');
+      await inputName.setValue('Cahyo Eko');
       
       // Pastikan teks telah berhasil diinputkan dengan memeriksa nilai field
       const NameValue = await inputName.getText();
-      expect(NameValue).toBe('Cahyo');
+      expect(NameValue).toBe('Cahyo Eko');
   });
 
   it('should input text into a Weight field', async () => {
@@ -37,11 +37,11 @@ describe('Scenario mobile automation', () => {
     await HeightField.clearValue();
     
     // Input teks baru ke dalam field
-    await HeightField.setValue('150');
+    await HeightField.setValue('165');
     
     // Pastikan teks telah berhasil diinputkan dengan memeriksa nilai field
     const HeightValue = await HeightField.getText();
-    expect(HeightValue).toBe('150');
+    expect(HeightValue).toBe('165');
   });
 
   it('should select gender male', async () => {
